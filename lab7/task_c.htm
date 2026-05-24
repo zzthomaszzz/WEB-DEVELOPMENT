@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Task C - DOM Table</title>
+    <style type="text/css">
+    body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-weight: bold;
+    }
+    .new {
+        background-color: #ffcccc;
+    }
+    </style>
+    <script type="text/javascript" src="task_c.js"></script>
+</head>
+<body onload="makeTable()">
+    <h1>Web Development - Lab 7</h1>
+    <p>Subject Table</p>
+    <table id="tbl" border="1"></table>
+    <br />
+    <form>
+        <input type="button" value=" append a new row " onclick="appendRow()" />
+    </form>
+</body>
+</html>
