@@ -1,23 +1,27 @@
 <?php
-$days[] = "Sunday";
-$days[] = "Monday";
-$days[] = "Tuesday";
-$days[] = "Wednesday";
-$days[] = "Thursday";
-$days[] = "Friday";
-$days[] = "Saturday";
-
+$days = array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"); 
 echo "The days of the week in English are:<br>";
-echo implode(", ", $days) . "<br><br>";
+for ($i = 0; $i<= 6; $i++){
+    if($i != 6){
+        echo "$days[$i], ";
+    }
+    else{
+        echo "$days[$i]. ";
+    }
+    
+}
+echo "<br><br>";
 
-$days[0] = "Dimanche";
-$days[1] = "Lundi";
-$days[2] = "Mardi";
-$days[3] = "Mercredi";
-$days[4] = "Jeudi";
-$days[5] = "Vendredi";
-$days[6] = "Samedi";
-
+$days = array("Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"); 
 echo "The days of the week in French are:<br>";
-echo implode(", ", $days) . "<br>";
+
+for ($i = 0; $i<= 6; $i++){
+    if($i != 6){
+        echo "$days[$i], ";
+    }
+    else{
+        echo "$days[$i]. ";
+    }
+    
+}
 ?>

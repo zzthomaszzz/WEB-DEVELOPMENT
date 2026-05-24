@@ -3,7 +3,8 @@ function is_leapyear($year) {
     if ($year % 4 == 0) {
         if ($year % 100 != 0) {
             return true;
-        } elseif ($year % 400 == 0) {
+        } 
+        elseif ($year % 400 == 0) {
             return true;
         }
     }
@@ -14,15 +15,17 @@ $year = isset($_GET['year']) ? $_GET['year'] : null;
 
 if ($year === null) {
     echo "No year provided. <a href='leapyearform.html'>Go back</a>";
-} elseif (!is_numeric($year)) {
+} 
+elseif (!is_numeric($year)) {
     echo "Error: Please enter a valid year. <a href='leapyearform.html'>Go back</a>";
-} else {
+} 
+else {
     $year = (int)$year;
     if (is_leapyear($year)) {
         echo "The year you entered $year is a leap year.";
-    } else {
+    } 
+    else {
         echo "The year you entered $year is a standard year.";
     }
-    echo '<br><br><a href="leapyearform.html">Check another year</a>';
 }
 ?>

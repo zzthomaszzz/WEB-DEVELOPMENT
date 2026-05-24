@@ -1,5 +1,5 @@
 <?php
-$value = isset($_GET['number']) ? $_GET['number'] : 4;
+$value = isset($_GET['number']) ? $_GET['number'] : 0;
 
 $message = (!is_numeric($value) || (int)$value != $value)
     ? "$value is not an integer."
@@ -8,5 +8,4 @@ $message = (!is_numeric($value) || (int)$value != $value)
         : "$value is an integer and it is odd.");
 
 echo $message . "<br><br>";
-echo '<a href="iseven_form.html">Try another number</a>';
 ?>

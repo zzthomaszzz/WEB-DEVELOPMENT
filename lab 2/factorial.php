@@ -11,6 +11,5 @@ if ($input === null) {
     $n = (int)$input;
     $result = factorial($n);
     echo "The factorial of $n is: $result<br><br>";
-    echo '<a href="factorialform.html">Try another number</a>';
 }
 ?>
